@@ -1,0 +1,17 @@
+.el-collapse-item__header{
+	height: 37px;
+	line-height: 37px;
+	text-indent:12px;
+}
+.el-collapse-item__arrow{
+	line-height: 37px;
+}
+.el-collapse-item__arrow.is-active{
+    line-height: 25px;
+}
+.el-collapse-item__header.is-active{
+    border-bottom: 1px solid #ebeef5;
+}
+.el-collapse-item__content{
+	padding-bottom:0px;
+}
