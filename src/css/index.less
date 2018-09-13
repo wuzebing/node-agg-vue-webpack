@@ -13,6 +13,7 @@ body,html{
 	position: fixed;
 	width: 100%;
 	z-index: 99;
+	display: flex;
 	.log{
 		width: 200px;
 		height: 100%;
@@ -20,6 +21,25 @@ body,html{
 		font-size: 20px;
 		line-height:50px;
 		text-indent: 20px;
+	}
+	.h-menu{
+		flex:1;
+		color:#fff;
+		ul{
+			list-style: none;
+			height:100%;
+		    float: right;
+			li{
+				float:left;
+				height:50px;
+				line-height:50px;
+				text-align: center;
+				padding:0 15px;
+				font-size:14px;
+				font-weight: 400;
+				cursor: pointer;
+			}
+		}
 	}
 }
 .content{
@@ -57,3 +77,37 @@ body,html{
 		flex:1;
 	}
 }
+
+
+
+
+.item-list{
+	width:100%;
+	margin:0 !important;
+}
+.item-list .item{
+	position: relative;
+}
+.item-list .item .masking{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	z-index: 99999999;
+	cursor: pointer;
+	top:0;
+}
+.item-list .box-card{
+	margin-top:30px;
+}
+.item-list .el-card:hover{
+	box-shadow: 0 8px 18px 0 rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+

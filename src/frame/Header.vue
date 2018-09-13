@@ -1,6 +1,12 @@
 <template>
    <div class="header">
-      <div class="log"><!-- Echarts换肤系统 --></div>
+      <div class="log">Echarts基地</div>
+      <div class="h-menu">
+        <ul>
+          <li>首页</li>
+          <li>组件</li>
+        </ul>
+      </div>
    </div>
 </template>
 
@@ -15,10 +21,6 @@ import axios from "axios";
      
     },
     mounted () {
-      axios.get("/api/getChartTypeList").then((res)=>{
-        
-        debugger;
-      })
     },
     components: {}
   }
