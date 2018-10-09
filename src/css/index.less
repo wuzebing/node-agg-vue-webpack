@@ -50,19 +50,56 @@ body,html{
 	.left-content{
 		flex:1;
 		display: flex;
-		flex-direction:column;
+		// flex-direction:column;
 		.view-charts{
-			height: 400px;
-			border-bottom:1px solid #ccc;
+			flex:1;
+			display: flex;
+			border-left:1px solid #ccc;
+			flex-direction:column;
+			.view-charts-content{
+				height:380px;
+			}
+			.view-charts-mes{
+				border-top:1px solid #ccc;
+				flex:1;
+			}
 		}
 		.view-code{
-			flex:1;
+			width: 400px;
+			position: relative;
+			padding-bottom:46px;
+			.view-code-mes{
+				width: 100%;
+				height: 34px;
+				background: #fafafa;
+				position: absolute;
+				bottom:34px;
+				z-index: 11;
+				line-height:34px;
+				border-top:1px solid #ccc;
+			}
+			.view-code-button{
+				width: 100%;
+				height: 34px;
+				background: #fafafa;
+				position: absolute;
+				bottom:0;
+				z-index: 10;
+				padding-top:10px;
+				.el-button{
+					float:right;
+					margin-right:10px;
+				}
+			}
 		}
 	}
 	.right-content{
-		width:300px;
+		width:220px;
 		border-left: 1px solid #ccc;
 		height: 100%;
+	}
+	.card-name{
+		font-size:16px;
 	}
 }
 .config-item{

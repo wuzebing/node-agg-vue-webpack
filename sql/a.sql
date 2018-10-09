@@ -9,6 +9,7 @@ insert into chart_type_list (cname,type) values ('线形图','line');
 insert into chart_type_list (cname,type)  values ('柱状图','bar');
 insert into chart_type_list (cname,type)  values ('扇形图','pie');
 insert into chart_type_list (cname,type)  values ('雷达图','radar');
+insert into chart_type_list (cname,type)  values ('象线图','scatter');
 
 drop table IF EXISTS chart_config_list;
 create table IF NOT EXISTS chart_config_list (
@@ -23,3 +24,4 @@ insert into chart_config_list (cname,type,chart_options) values ('BI线形图','
 insert into chart_config_list (cname,type,chart_options)  values ('数仓柱状图','bar','{}');
 insert into chart_config_list (cname,type,chart_options)  values ('数仓扇形图','pie','{}');
 insert into chart_config_list (cname,type,chart_options)  values ('数仓雷达图','radar','{}');
+

@@ -1,10 +1,10 @@
 <template>
    <div class="header">
-      <div class="log">Echarts基地</div>
+      <div class="log">Echarts样式基地</div>
       <div class="h-menu">
         <ul>
-          <li>首页</li>
-          <li>组件</li>
+          <li><a href="#/home">首页</a></li>
+          <li><a href="#/example">组件</a></li>
         </ul>
       </div>
    </div>

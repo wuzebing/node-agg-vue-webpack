@@ -7,4 +7,7 @@ module.exports = app => {
     let root = '/api/home'
     app.get(root, homeController.index);
     app.get(root + '/getOptionsList', homeController.getOptionsList);
+    app.get(root + '/getChartList', homeController.getChartList);
+    app.get(root + '/getTypeList', homeController.getTypeList);
+    app.post(root + '/saveConfig', homeController.saveConfig);
 }

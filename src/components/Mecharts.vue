@@ -36,16 +36,24 @@ import debounce from 'lodash.debounce'
         myChart:null
       }
     },
+    watch:{
+      'options'(data){
+        this.init();
+      }
+    },
     methods: {
       _doResize(){
         this.myChart.resize();
+      },
+      init(){
+        this.myChart = echarts.init(document.getElementById(this.id));
+        this.myChart.clear();
+        this.myChart.setOption(this.options);
+        listenerContainer[this.id] = this;
       }
     },
     mounted () {
-      this.myChart = echarts.init(document.getElementById(this.id));
-      this.myChart.setOption(this.options);
-      listenerContainer[this.id] = this;
-      
+      this.init();
     },
     components: {}
   }

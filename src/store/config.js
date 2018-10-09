@@ -2,7 +2,14 @@ import Vue from 'vue';
 
 const state = {
   options: {},
-  configOptions: {},
+  configOptions: {
+    // id:null,
+    // chart_option:{},
+    // cname:"描述",
+    // type:''
+  },
+  activeChartKey:"",
+  errorMessage:"",
 }
 
 const mutations = {
@@ -13,6 +20,15 @@ const mutations = {
   setConfigOptions(state, options) {
     state.configOptions = options;
   },
+
+  setActiveChartKey(state, options) {
+    state.activeChartKey = options;
+  },
+
+  setErrorMessage(state, msg){
+    state.errorMessage = msg;
+  }
+  
  
 }
 
@@ -28,6 +44,19 @@ const actions = {
   }, options) {
     commit("setConfigOptions", options);
   },
+
+  setActiveChartKey({
+    commit
+  }, key) {
+    commit("setActiveChartKey", key);
+  },
+
+  setErrorMessage({
+    commit
+  }, msg) {
+    commit("setErrorMessage", msg);
+  },
+
 
 }
 

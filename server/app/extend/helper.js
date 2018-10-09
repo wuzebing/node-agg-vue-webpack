@@ -1,7 +1,7 @@
 'use strict';
-const addOrsub = require('./string/addOrsub');
+const addOrSub = require('./string/addOrSub');
 module.exports = {
     show() {
-        return addOrsub.removeOne("123");
+        return addOrSub.removeOne("123");
     }
 };
